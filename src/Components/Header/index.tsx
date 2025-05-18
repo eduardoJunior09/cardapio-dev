@@ -1,15 +1,24 @@
+import Search from "../Search";
+
 export default function Header() {
   return (
-    <header>
-      <div className="flex items-center justify-center gap-1 w-full text-2xl p-2 bg-red-500 text-white font-semibold">
+    <header className="flex flex-col gap-2 w-full">
+      <div className="flex items-center justify-center gap-1 w-full text-2xl p-2 bg-principal text-white font-semibold">
         <i className="bi bi-shop-window"></i>
         <h1>Cardápio Dev</h1>
       </div>
-      <div className="flex items-center justify-center gap-1 w-full p-1 text-sm text-red-400">
-        <i className="bi bi-geo-alt-fill"></i>
-        <p>Mutuípe - Bahia</p>
+      <div className="W-full px-2">
+        <Search />
       </div>
-      <div className="w-full bg-gray-500 h-56"></div>
+      <div className="w-full h-30 px-4 rounded-lg">
+        <img
+          src="/public/lanchonete.jpg"
+          alt=""
+          className="w-full  h-full object-cover rounded-lg"
+        />
+      </div>
+
+
     </header>
   );
 }
