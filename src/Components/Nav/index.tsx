@@ -4,7 +4,7 @@ import Tags from "../Tags";
 export default function Nav() {
   return (
     <div>
-      <nav className="flex gap-4 w-full overflow-x-auto p-2">
+      <nav className="flex items-start justify-start gap-4 w-full overflow-x-auto p-2">
         <Tags
           label="Combo"
           icon={<i className="bi bi-box"></i>}
